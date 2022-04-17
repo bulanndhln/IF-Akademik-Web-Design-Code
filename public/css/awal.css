@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kaushan {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.kanit {
+    font-family: 'Kanit', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.customShadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
