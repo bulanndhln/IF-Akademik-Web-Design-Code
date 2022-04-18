@@ -512,60 +512,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -1.25rem;
 }
 
-.bottom-2 {
-  bottom: 0.5rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.right-0 {
-  right: 0px;
+.-left-10 {
+  left: -2.5rem;
 }
 
 .-top-5 {
   top: -1.25rem;
 }
 
-.right-10 {
-  right: 2.5rem;
-}
-
-.-top-10 {
-  top: -2.5rem;
-}
-
-.top-10 {
-  top: 2.5rem;
-}
-
-.right-20 {
-  right: 5rem;
-}
-
-.top-16 {
-  top: 4rem;
-}
-
-.top-24 {
-  top: 6rem;
-}
-
-.right-32 {
-  right: 8rem;
-}
-
-.-left-10 {
-  left: -2.5rem;
-}
-
 .-right-10 {
   right: -2.5rem;
-}
-
-.top-28 {
-  top: 7rem;
 }
 
 .top-32 {
@@ -647,20 +603,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
 .h-64 {
   height: 16rem;
 }
 
-.h-36 {
-  height: 9rem;
+.h-72 {
+  height: 18rem;
 }
 
 .w-full {
@@ -687,20 +635,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .w-64 {
   width: 16rem;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .justify-center {
@@ -709,6 +657,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .rounded-full {
@@ -764,11 +720,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#CDCC80\] {
   --tw-bg-opacity: 1;
   background-color: rgb(205 204 128 / var(--tw-bg-opacity));
-}
-
-.bg-red-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1000,13 +951,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 768px) {
+  .md\:bottom-4 {
+    bottom: 1rem;
+  }
+
+  .md\:bottom-9 {
+    bottom: 2.25rem;
+  }
+
+  .md\:bottom-20 {
+    bottom: 5rem;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
-  }
-
-  .lg\:relative {
-    position: relative;
   }
 
   .lg\:left-20 {
@@ -1053,10 +1018,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 50%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:max-w-7xl {
     max-width: 80rem;
   }
@@ -1069,11 +1030,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:rounded-l-none {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-  }
-
-  .lg\:bg-\[\#DAD992\] {
-    --tw-bg-opacity: 1;
-    background-color: rgb(218 217 146 / var(--tw-bg-opacity));
   }
 
   .lg\:p-0 {
@@ -1090,8 +1046,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 10rem;
   }
 
-  .xl\:top-40 {
-    top: 10rem;
+  .xl\:top-48 {
+    top: 12rem;
   }
 
   .xl\:-left-20 {
@@ -1110,16 +1066,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     right: 13rem;
   }
 
-  .xl\:top-44 {
-    top: 11rem;
+  .xl\:top-40 {
+    top: 10rem;
   }
 
-  .xl\:top-48 {
-    top: 12rem;
+  .xl\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .xl\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
+  .xl\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .xl\:mt-6 {
+    margin-top: 1.5rem;
   }
 
   .xl\:block {
     display: block;
+  }
+
+  .xl\:inline {
+    display: inline;
   }
 
   .xl\:hidden {
@@ -1142,8 +1114,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 15rem;
   }
 
-  .xl\:w-full {
-    width: 100%;
+  .xl\:h-\[26rem\] {
+    height: 26rem;
+  }
+
+  .xl\:h-60 {
+    height: 15rem;
   }
 
   .xl\:w-72 {
@@ -1160,6 +1136,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:max-w-full {
     max-width: 100%;
+  }
+
+  .xl\:p-0 {
+    padding: 0px;
   }
 
   .xl\:text-5xl {
@@ -1179,6 +1159,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:text-lg {
     font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-xl {
+    font-size: 1.25rem;
     line-height: 1.75rem;
   }
 }
