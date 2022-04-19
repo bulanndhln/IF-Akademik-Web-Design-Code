@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Link font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&display=swap" rel="stylesheet">
+    <!-- Closing link font style -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <title>Lagu Daerah Jambi</title>
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="container max-w-full h-14 bg-[#DAD992]" id="home">
+        <div class="flex gap-2 sm:gap-4">
+            <img src="./img/PROV JAMBI_PNG.png" alt="logo provinsi jambi" class="w-14 h-12 pt-2 pl-4 sm:w-16 sm:h-12 sm:pt-2 sm:pl-7">
+            <h1 class="kaushan text-2xl py-3">Kebudayaan Jambi</h1>
+
+            <div class="w-full hidden lg:block absolute text-center top-4 font-bold">
+                <a href="#home" class="inline-block mx-5 poppins hover:text-slate-400">Home</a>
+                <a href="#kategori" class="inline-block mx-5 poppins hover:text-slate-400">Kategori</a>
+                <a href="#kontak" class="inline-block mx-5 poppins hover:text-slate-400">Hubungi Kami</a>
+            </div>
+
+            <div class="flex items-center px-4 lg:hidden">
+                <button type="button" id="hamburger" name="hamburger" class="absolute right-4">
+                        <span class="hamburger transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger transition duration-300 ease-in-out"></span>
+                        <span class="hamburger transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                <nav id="nav-menu" class="hidden absolute poppins px-5 py-3 font-semibold bg-[#E6DF9A] customShadow rounded-l-2xl border-4 border-slate-500 rounded-br-2xl max-w-[250-px] right-10 top-6">
+                    <ul class="block">
+                        <li class="inline-block mx-5">
+                            <a href="#home" class="hover:text-slate-500">Home</a>
+                        </li>
+                        <li class="inline-block mx-5">
+                            <a href="#kategori" class="hover:text-slate-500">Kategori</a>
+                        </li>
+                        <li class="inline-block mx-5">
+                            <a href="#kontak" class="hover:text-slate-500">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container max-w-full">
+        <h1 class="p-5 uppercase kanit text-5xl font-bold text-white stroke ">Lagu Daerah</h1>
+        <div class="batanghari">
+            <div class="bg-[#DAD992] w-1/2 rounded-r-full h-12 relative px-5">
+                <h2 class="text-xl absolute right-7 font-semibold inline-block top-2">
+                    1. Batanghari
+                </h2>
+            </div>
+            <div class="sm:flex px-5">
+                <div class="customShadow my-5 w-[23rem] h-[16rem] mx-auto p-5">
+                    <img src="./img/batanghari.jfif" alt="Lagu Batanghari" class="h-full w-full">
+                </div>
+                <p class="text-justify poppins">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores vel ipsam reiciendis repudiandae numquam, consequuntur explicabo maiores quibusdam tenetur minus eaque quos qui veniam facilis quidem aperiam voluptatibus praesentium quo quis hic suscipit
+                    perferendis. Sunt veniam itaque, temporibus voluptas obcaecati fugit qui placeat? Optio temporibus saepe delectus corporis ut enim veniam nemo illum fuga dolorem blanditiis maiores dolorum, voluptatum laborum repudiandae! Quod quo
+                    quisquam aspernatur culpa laborum rerum iste in nam numquam, hic autem quam adipisci nobis sed? Vitae, officia doloremque, natus ipsam ex voluptas temporibus corporis optio quas nulla consequatur. Consequuntur reiciendis tenetur et
+                    debitis? Error magni dolorum aperiam!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer pt-5 w-full mt-10" id="kontak">
+        <div class="bg-[#DAD992] px-5 py-5 ">
+            <h4 class="poppins font-bold text-md text-center py-4 uppercase ">Dinas Kebudayaan dan Pariwisata</h4>
+            <p class="text-center ">Jl. K.H. Agus Salim Kota Baru Jambi.</p>
+            <p class="text-center ">Telp. (0741) 445054, 445056 Fax. (0741) 61545, 445054</p>
+        </div>
+        <div class="bg-[#CDCC80] ">
+            <p class="text-center py-3 font-bold poppins ">Copyright @2022 by Hawhaw Team</p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
