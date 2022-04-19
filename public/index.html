@@ -25,24 +25,45 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <nav>
-        <div class="w-full h-14 bg-[#DAD992] ">
-            <div class="flex gap-2 sm:gap-4">
-                <img src="./img/PROV JAMBI_PNG.png" alt="logo provinsi jambi" class="w-14 h-12 pt-2 pl-4 sm:w-16 sm:h-12 sm:pt-2 sm:pl-7">
-                <h1 class="kaushan text-2xl py-3">Kebudayaan Jambi</h1>
+    <div class="container max-w-full h-14 bg-[#DAD992]" id="home">
+        <div class="flex gap-2 sm:gap-4">
+            <img src="./img/PROV JAMBI_PNG.png" alt="logo provinsi jambi" class="w-14 h-12 pt-2 pl-4 sm:w-16 sm:h-12 sm:pt-2 sm:pl-7">
+            <h1 class="kaushan text-2xl py-3">Kebudayaan Jambi</h1>
 
-                <div class="w-full hidden lg:block absolute text-center top-4 font-bold">
-                    <a href="#" class="inline-block mx-5 poppins hover:text-slate-400">Home</a>
-                    <a href="#" class="inline-block mx-5 poppins hover:text-slate-400">Kategori</a>
-                    <a href="#" class="inline-block mx-5 poppins hover:text-slate-400">Hubungi Kami</a>
-                </div>
+            <div class="w-full hidden lg:block absolute text-center top-4 font-bold">
+                <a href="#home" class="inline-block mx-5 poppins hover:text-slate-400">Home</a>
+                <a href="#kategori" class="inline-block mx-5 poppins hover:text-slate-400">Kategori</a>
+                <a href="#kontak" class="inline-block mx-5 poppins hover:text-slate-400">Hubungi Kami</a>
             </div>
+
+            <div class="flex items-center px-4 lg:hidden">
+                <button type="button" id="hamburger" name="hamburger" class="absolute right-4">
+                        <span class="hamburger transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger transition duration-300 ease-in-out"></span>
+                        <span class="hamburger transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                <nav id="nav-menu" class="hidden absolute poppins px-5 py-3 font-semibold bg-white customShadow rounded-l-2xl border-4 border-slate-500 rounded-br-2xl max-w-[250-px] right-10 top-6">
+                    <ul class="block">
+                        <li class="inline-block mx-5">
+                            <a href="#home" class="hover:text-slate-500">Home</a>
+                        </li>
+                        <li class="inline-block mx-5">
+                            <a href="#kategori" class="hover:text-slate-500">Kategori</a>
+                        </li>
+                        <li class="inline-block mx-5">
+                            <a href="#kontak" class="hover:text-slate-500">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
         </div>
-    </nav>
+    </div>
 
     <div class="containter max-w-xl sm:max-w-[60rem] mx-auto lg:max-w-7xl xl:max-w-full">
         <div class="carousel p-5 sm:flex lg:h-[450px] xl:h-[500px]">
-            <div class="kanan relative lg:h-[420px] sm:hidden">
+            <div class="kanan relative lg:h-[420px] sm:hidden top-7">
                 <div class="w-52 h-52 bg-[#DAD992] rounded-full absolute top-5 left-8 sm:hidden"></div>
                 <div class="w-60 h-60 bg-[#F3ED9E] rounded-full absolute bottom-4 right-8 sm:hidden"></div>
                 <img src="./img/image-removebg-preview.png" alt="Baju Adat Jambi" class="w-[-210px] h-[405px] relative left-7 sm:static sm:mx-auto">
@@ -112,7 +133,7 @@
             </div>
         </div>
 
-        <div class="kebudayaan p-5">
+        <div class="kebudayaan p-5" id="kategori">
             <div class="bg-[#E6DF9A] lg:rounded-full lg:max-w-4xl lg:mx-auto rounded-xl customShadow ">
                 <h2 class="poppins p-5 text-center font-bold text-2xl">Kebudayaan yang Terdapat <br class="md:hidden"> di Provinsi Jambi</h2>
             </div>
@@ -153,7 +174,7 @@
                     </div>
                 </div>
                 <div class="max-w-full flex justify-center my-20">
-                    <div class="border-4 border-[#CDCC80] lg:h-[20rem] xl:h-[20rem] lg:mt-4 lg:w-[920px] mr-56 xl:w-full p-5">
+                    <div class="border-4 border-[#CDCC80] lg:h-[20rem] xl:h-[20rem] lg:mt-4 xl:mt-7 lg:w-[920px] mr-56 xl:w-full p-5">
                         <div class="border-4 border-slate-700 xl:h-[17rem] lg:h-[16.7rem]">
                             <div class="lg:pr-[100px] xl:pr-[150px] py-3 lg:pl-4 text-justify">
                                 <div class="text-right">
@@ -195,7 +216,7 @@
             </div>
         </div>
     </div>
-    <div class="footer pt-5 w-full mt-10">
+    <div class="footer pt-5 w-full mt-10" id="kontak">
         <div class="bg-[#DAD992] px-5 py-5 ">
             <h4 class="poppins font-bold text-md text-center py-4 uppercase ">Dinas Kebudayaan dan Pariwisata</h4>
             <p class="text-center ">Jl. K.H. Agus Salim Kota Baru Jambi.</p>
@@ -206,7 +227,7 @@
         </div>
     </div>
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
